@@ -30,3 +30,24 @@ body {
   border: 50px solid transparent;
   border-bottom-color: white;
 }
+
+.kinetic::before {
+  transform: rotate(90deg);
+}
+
+/* for the animations */
+@keyframes rotateA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
